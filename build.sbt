@@ -21,7 +21,8 @@ lazy val commonSettings = Seq(
 
 lazy val analyticsDependencies = Seq(
   "org.apache.spark" %% "spark-core" % sparkVer % "provided",
-  "org.apache.spark" %% "spark-mllib" % sparkVer % "provided"
+  "org.apache.spark" %% "spark-mllib" % sparkVer % "provided",
+  "org.deeplearning4j" %% "dl4j-spark" % "1.0.0-beta3_spark_2"
 )
 
 lazy val testDependencies = Seq(
@@ -29,7 +30,7 @@ lazy val testDependencies = Seq(
 )
 
 lazy val utilDependencies = Seq(
-  "com.johnsnowlabs.nlp" %% "spark-nlp" % "1.7.2"
+  "com.johnsnowlabs.nlp" %% "spark-nlp" % "1.7.3"
 )
 
 lazy val root = (project in file("."))
