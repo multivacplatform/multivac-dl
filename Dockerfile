@@ -48,7 +48,7 @@ RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~/.bashrc
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir notebook==5.* numpy pyspark spark-nlp Keras scikit-learn scipy matplotlib pydot tensorflow==2.0.0-alpha0
+RUN pip3 install --no-cache-dir notebook==6.* numpy pyspark spark-nlp Keras scikit-learn scipy matplotlib pydot tensorflow==2.0.0-rc0
 
 RUN mkdir -p /home/multivac/jupyter
 
